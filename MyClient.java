@@ -8,8 +8,13 @@ public class MyClient {
 
 		try {
 
-			MyInter remoteObject = (MyInter) Naming.lookup("rmi://localhost:8020/MyClient");
+			// for between two pc's
+			// we take the IP address of our server	
+			// to disable this comment you have to change IP address with you server IP
 			// MyInter remoteObject = (MyInter) Naming.lookup("rmi://10.18.51.29:8020/MyClient");
+
+			// for localy, within our single pc
+			MyInter remoteObject = (MyInter) Naming.lookup("rmi://localhost:8020/MyClient");
 			System.out.println(remoteObject.display());
 			new Calculator();
 			

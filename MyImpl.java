@@ -6,8 +6,7 @@ public class MyImpl extends UnicastRemoteObject implements MyInter {
     }
 
     @Override
-    public String display() throws RemoteException {
-        // new Calculator();
+    public String display() throws RemoteException { 
         return "The calculator service is given remotely using Java Frame";
     }
 
@@ -15,31 +14,4 @@ public class MyImpl extends UnicastRemoteObject implements MyInter {
         new Calculator();
     }
 
-    @Override
-    public int add(int number1, int number2) throws RemoteException {
-        // TODO Auto-generated method stub
-        System.out.println("From remote object");
-        return number1 + number2;
-    }
-
-    @Override
-    public int subtract(int number1, int number2) throws RemoteException {
-        // TODO Auto-generated method stub
-        System.out.println("From remote object");
-        return number1 - number2;
-    }
-
-    @Override
-    public double divide(double number1, double number2) throws RemoteException {
-        // TODO Auto-generated method stub
-        System.out.println("From remote object");
-        return number1 / number2;
-    }
-
-    @Override
-    public int multiply(int number1, int number2) throws RemoteException {
-        // TODO Auto-generated method stub
-        System.out.println("From remote object");
-        return number1 * number2;
-    }
 }
