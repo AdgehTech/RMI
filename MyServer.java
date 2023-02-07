@@ -1,6 +1,7 @@
 import java.rmi.*;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
+import java.rmi.registry.*;
+// import java.rmi.registry.LocateRegistry;
+// import java.rmi.registry.Registry;
 
 
 public class MyServer {
